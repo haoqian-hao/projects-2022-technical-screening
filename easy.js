@@ -48,7 +48,6 @@ const altNumbers = (numArray) => {
     const longest = allN.length > allP.length ? allN.length : allP.length;
     for (let i = 0; i < longest; i++) {    
         if (allN.length > allP.length) {
-            if (allP[i])
             res.push(allN[i])
             res.push(allP[i])
         } else {
@@ -56,6 +55,7 @@ const altNumbers = (numArray) => {
             res.push(allN[i])
         }
     }
+    res.pop()
     return res;
 }
 
@@ -70,7 +70,6 @@ module.exports = { altNumbers } // Do not modify this line
 
 let array1 = [1, -3, -8, -5, 10]
 array1 = altNumbers(array1)
-console.log(array1)
 const answer1 = [-3, 1, -8, 10, -5]
 for (let i = 0; i < array1.length; i++) {
     assert(array1[i] === answer1[i])

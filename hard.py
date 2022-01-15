@@ -34,11 +34,18 @@ def is_unlocked(courses_list, target_course):
     """
     
     # TODO: COMPLETE THIS FUNCTION!!!
+    print(CONDITIONS)
+    
+    # get course's requirement
+    req = CONDITIONS[target_course]
+    
+    # get AND conditions
+    
     
     return True
 
 
 
 
-
+# print(is_unlocked(1,1))
     
